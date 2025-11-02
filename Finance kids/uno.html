@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Finance Kids - Documentación del Proyecto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13ec49",
+            "background-light": "#f6f8f6",
+            "background-dark": "#102215",
+            "text-light": "#0d1b11",
+            "text-dark": "#e7f3ea",
+            "subtle-light": "#cfe7d5",
+            "subtle-dark": "#1d3a24",
+            "primary-text-light": "#0d1b11",
+            "primary-text-dark": "#0d1b11",
+            "card-light": "#ffffff",
+            "card-dark": "#162f1c",
+            "accent-light": "#4c9a5f",
+            "accent-dark": "#a6c4a9"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      scroll-behavior: smooth; /* desplazamiento suave al hacer clic en anclas */
+    }
+
+    /* Animación para las pestañas (hover/focus) */
+    .tab-link { position: relative; transition: transform .18s ease, box-shadow .18s ease, color .18s ease; }
+    .tab-link:hover, .tab-link:focus { transform: translateY(-4px) scale(1.03); box-shadow: 0 10px 20px rgba(16,34,21,0.12); z-index: 20; }
+    .tab-link::after { content: ""; position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%); width: 0; height: 3px; border-radius: 6px; background: #13ec49; transition: width .18s ease; }
+    .tab-link:hover::after, .tab-link:focus::after { width: 60%; }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-primary flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined !text-4xl">
+            account_balance
+          </span>
+</div>
+<h1 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1">Finance Kids</h1>
+</div>
+</header>
+<!-- Tabs Navigation -->
+<nav class="sticky top-[72px] z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="border-b border-subtle-light dark:border-subtle-dark px-4">
+<div class="flex justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary-text-light dark:text-primary pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Información General</p>
+</a>
+
+<a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="semestre1.html">
+  <p class="text-sm font-bold leading-normal tracking-[0.015em]">Semestre 1</p>
+</a>
+<a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="semestre2.html">
+  <p class="text-sm font-bold leading-normal tracking-[0.015em]">Semestre 2</p>
+</a>
+<a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="semestre3.html">
+  <p class="text-sm font-bold leading-normal tracking-[0.015em]">Semestre 3</p>
+</a>
+
+</div>
+</div>
+</nav>
+<main class="flex-1">
+<!-- Hero Section -->
+<div class="@container">
+<div class="@[480px]:p-4 p-4">
+<div class="flex min-h-[380px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-lg items-center justify-center p-4 text-center" data-alt="Abstract green financial chart background" style='background-image: linear-gradient(rgba(13, 27, 17, 0.4) 0%, rgba(13, 27, 17, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuALUPSzKb_zDXgBumqjBg_gSx-52MqLzyWjUssWU5M25OX7ZnQgWKeVmBzm9IWFXCt3pDbcbCG7jTQO3YiyO8WFRc_Ms7hiGhl_pIt5qLIjJ2I9u_c8NhhElX_5Whd2SPtcBDeoTxdaICbFPig27D7wQQfEVe5s1g_w4G6d2443oeUnvRR-sN9hBq1uXnbBsz0B0Z9PY9nlLV3QPYlPAbdUFEGp0zfFtP8TRLwjGTzLLPKB1lJi2gBUl3DkNhD2NPd485eIkCWcRYU");'>
+<div class="flex flex-col gap-2">
+</h2>
+<div class="max-w-5xl mx-auto text-center md:text-left">
+  <h2 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">Finance Kids</h2>
+  <p class="mt-4 text-white/95 text-base md:text-lg leading-relaxed max-w-3xl mx-auto md:mx-0 bg-black/25 backdrop-blur-sm p-4 md:p-6 rounded-lg border border-white/10">
+    Finance Kids es un proyecto que busca enseñar educación financiera a niños y adolescentes de una forma divertida e interactiva. Es una aplicación tipo juego educativo (similar a Duolingo) donde los usuarios aprenden manejo del dinero, ahorro, gastos e inversiones mediante niveles, retos y recompensas.
+    <br/><br/>
+    El objetivo es motivar a los jóvenes a desarrollar buenos hábitos financieros desde temprana edad, combinando gamificación con contenidos prácticos y adaptados por edad. La app registra el progreso y ofrece incentivos para un aprendizaje continuo.
+  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Section -->
+<section class="px-4 py-6">
+  <h3 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Nuestro Equipo</h3>
+  <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Miembro 1 -->
+    <div class="bg-card-light dark:bg-card-dark rounded-lg p-4 flex flex-col items-center text-center border border-subtle-light dark:border-subtle-dark shadow-sm">
+      <div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-800 mb-3">
+        <!-- reemplaza src por la imagen del miembro -->
+        <img src="documentos e imagenes/luisavatar.png" alt="Luis Felipe" class="w-full h-full object-cover"/>
+      </div>
+      <div class="text-sm font-bold text-text-light dark:text-text-dark">Luis Felipe Cardozo Herrada</div>
+      <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Líder del proyecto / desarrollador backend</div>
+    </div>
+
+    <!-- Miembro 2 -->
+    <div class="bg-card-light dark:bg-card-dark rounded-lg p-4 flex flex-col items-center text-center border border-subtle-light dark:border-subtle-dark shadow-sm">
+      <div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-800 mb-3">
+        <img src="documentos e imagenes/williavatar.png" alt="William Dario" class="w-full h-full object-cover"/>
+      </div>
+      <div class="text-sm font-bold text-text-light dark:text-text-dark">William Dario Gonzalez Rojas</div>
+      <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Diseñador de interfaz / experiencia de usuario (UI/UX)</div>
+    </div>
+
+    <!-- Miembro 3 -->
+    <div class="bg-card-light dark:bg-card-dark rounded-lg p-4 flex flex-col items-center text-center border border-subtle-light dark:border-subtle-dark shadow-sm">
+      <div class="w-24 h-24 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-800 mb-3">
+        <img src="documentos e imagenes/danielavatar.png" alt="Daniel Felipe" class="w-full h-full object-cover"/>
+      </div>
+      <div class="text-sm font-bold text-text-light dark:text-text-dark">Daniel Felipe Moreno Hecheverry</div>
+      <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark">documentador del proyecto / Analista y encargado de base de datos</div>
+    </div>
+
+  </div>
+</section>
+</body></html>

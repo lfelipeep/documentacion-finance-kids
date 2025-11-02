@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Finance Kids - Semestre 2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec80",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102219",
+                        "text-light": "#0d1b14",
+                        "text-dark": "#f6f8f7",
+                        "text-secondary-light": "#4c9a73",
+                        "text-secondary-dark": "#a3d3b8",
+                        "border-light": "#cfe7db",
+                        "border-dark": "#2a4b3a"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      scroll-behavior: smooth; /* desplazamiento suave */
+    }
+
+    /* Animación para las pestañas (hover / focus) */
+    .tab-link {
+      position: relative;
+      transition: transform .18s ease, box-shadow .18s ease, color .18s ease;
+    }
+    .tab-link:hover,
+    .tab-link:focus {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(16,34,21,0.12);
+      z-index: 20;
+    }
+    .tab-link::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 8px;
+      transform: translateX(-50%);
+      width: 0;
+      height: 3px;
+      border-radius: 6px;
+      background: #13ec80;
+      transition: width .18s ease;
+    }
+    .tab-link:hover::after,
+    .tab-link:focus::after {
+      width: 60%;
+    }
+
+    /* Texto de las pestañas: mismo verde que en el archivo anterior */
+    .tab-link,
+    .tab-link p {
+      color: #4c9a5f; /* verde claro (estado claro) */
+    }
+    /* color en modo oscuro */
+    .dark .tab-link,
+    .dark .tab-link p {
+      color: #a6c4a9;
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 backdrop-blur-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-text-light dark:text-text-dark">
+                    account_balance
+                </span>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em]">Finance Kids</h1>
+</div>
+</header>
+<nav class="sticky top-[68px] z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex border-b border-border-light dark:border-border-dark px-4 gap-8 overflow-x-auto">
+  <a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="uno.html">
+    <p class="text-sm font-bold leading-normal tracking-[0.015em]">inicio</p>
+  </a>
+  <a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="semestre1.html">
+    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Semestre 1</p>
+  </a>
+  <a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="semestre3.html">
+    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Semestre 3</p>
+  </a>
+</div>
+</nav>
+<section class="p-4">
+  <h3 class="text-text-light dark:text-text-dark text-[20px] font-bold pb-2">Documentos y diagramas</h3>
+  <div class="max-w-6xl mx-auto space-y-6">
+
+    <!-- Card: Documento PROYECTO -->
+    <div class="bg-background-light dark:bg-background-dark rounded-lg shadow-lg overflow-hidden border border-border-light dark:border-border-dark">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-border-light dark:border-border-dark">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-2xl text-primary">picture_as_pdf</span>
+          <div>
+            <div class="text-sm font-semibold text-text-light dark:text-text-dark">DOCUMENTO PROYECTO, FINANCE KIDS.pdf</div>
+            <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Vista previa integrada</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="documentos e imagenes/Financeapa.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-primary text-white text-sm hover:brightness-90">Abrir</a>
+          <a href="documentos e imagenes/Financeapa.pdf" download class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-border-light dark:border-border-dark text-sm">Descargar</a>
+        </div>
+      </div>
+      <div class="w-full h-[70vh] md:h-[80vh]">
+        <iframe src="documentos e imagenes/Financeapa.pdf" class="w-full h-full" frameborder="0" aria-label="Vista previa PDF - Documento Proyecto"></iframe>
+      </div>
+    </div>
+
+    <!-- Card: posted finance kids.png -->
+    <div class="bg-background-light dark:bg-background-dark rounded-lg shadow-lg overflow-hidden border border-border-light dark:border-border-dark">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-border-light dark:border-border-dark">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-2xl text-primary">image</span>
+          <div>
+            <div class="text-sm font-semibold text-text-light dark:text-text-dark">posted finance kids.png</div>
+            <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Imagen con zoom responsive</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="documentos e imagenes/posted finance kids.png" target="_blank" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-primary text-white text-sm hover:brightness-90">Abrir</a>
+          <a href="documentos e imagenes/posted finance kids.png" download class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-border-light dark:border-border-dark text-sm">Descargar</a>
+        </div>
+      </div>
+      <div class="w-full flex items-center justify-center p-4 bg-[rgba(0,0,0,0.02)] dark:bg-[rgba(255,255,255,0.02)]">
+        <img src="documentos e imagenes/posted finance kids.png" alt="posted finance kids" class="max-w-full h-[60vh] md:h-[72vh] object-contain rounded-md shadow-sm" />
+      </div>
+    </div>
+
+    <!-- Card: base datos.png -->
+    <div class="bg-background-light dark:bg-background-dark rounded-lg shadow-lg overflow-hidden border border-border-light dark:border-border-dark">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-border-light dark:border-border-dark">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-2xl text-primary">image</span>
+          <div>
+            <div class="text-sm font-semibold text-text-light dark:text-text-dark">base datos.png</div>
+            <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Imagen con zoom responsive</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="documentos e imagenes/base datos.png" target="_blank" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-primary text-white text-sm hover:brightness-90">Abrir</a>
+          <a href="documentos e imagenes/base datos.png" download class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-border-light dark:border-border-dark text-sm">Descargar</a>
+        </div>
+      </div>
+      <div class="w-full flex items-center justify-center p-4 bg-[rgba(0,0,0,0.02)] dark:bg-[rgba(255,255,255,0.02)]">
+        <img src="documentos e imagenes/base datos.png" alt="base datos" class="max-w-full h-[60vh] md:h-[72vh] object-contain rounded-md shadow-sm" />
+      </div>
+    </div>
+
+  </div>
+  <p class="mt-3 text-xs text-text-secondary-light dark:text-text-secondary-dark">Si la vista previa no carga correctamente, usa "Abrir" para ver el archivo en una nueva pestaña o descarga el archivo.</p>
+</section>
+</main>
+</div>
+</body></html>

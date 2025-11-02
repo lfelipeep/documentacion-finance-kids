@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Finance Kids - Semestre 3</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec80",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102219",
+                        "text-light": "#0d1b14",
+                        "text-dark": "#f6f8f7",
+                        "text-secondary-light": "#4c9a73",
+                        "text-secondary-dark": "#a3d3b8",
+                        "border-light": "#cfe7db",
+                        "border-dark": "#2a4b3a"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      scroll-behavior: smooth; /* desplazamiento suave */
+    }
+
+    /* Animación para las pestañas (hover / focus) */
+    .tab-link {
+      position: relative;
+      transition: transform .18s ease, box-shadow .18s ease, color .18s ease;
+    }
+    .tab-link:hover,
+    .tab-link:focus {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(16,34,21,0.12);
+      z-index: 20;
+    }
+    .tab-link::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 8px;
+      transform: translateX(-50%);
+      width: 0;
+      height: 3px;
+      border-radius: 6px;
+      background: #13ec80;
+      transition: width .18s ease;
+    }
+    .tab-link:hover::after,
+    .tab-link:focus::after {
+      width: 60%;
+    }
+
+    /* Texto de las pestañas: mismo verde que en el archivo anterior */
+    .tab-link,
+    .tab-link p {
+      color: #4c9a5f; /* verde claro (estado claro) */
+    }
+    /* color en modo oscuro */
+    .dark .tab-link,
+    .dark .tab-link p {
+      color: #a6c4a9;
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 backdrop-blur-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-text-light dark:text-text-dark">
+                    account_balance
+                </span>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em]">Finance Kids</h1>
+</div>
+</header>
+<nav class="sticky top-[68px] z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex border-b border-border-light dark:border-border-dark px-4 gap-8 overflow-x-auto">
+  <a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="uno.html">
+    <p class="text-sm font-bold leading-normal tracking-[0.015em]">inicio</p>
+  </a>
+  <a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="semestre1.html">
+    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Semestre 1</p>
+  </a>
+  <a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-accent-light dark:text-accent-dark pb-[13px] pt-4 flex-1" href="semestre2.html">
+    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Semestre 2</p>
+  </a>
+</div>
+</nav>
+<main class="flex-grow">
+<h2 class="tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-8 text-text-light dark:text-text-dark">Semestre 3</h2>
+<div class="grid grid-cols-[auto_1fr] gap-x-4 px-4 pb-4">
+<div class="flex flex-col items-center gap-1 pt-3">
+<span class="material-symbols-outlined text-2xl text-text-light dark:text-text-dark">
+                        science
+                    </span>
+<div class="w-[1.5px] grow bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<div class="h-28 w-full rounded-lg bg-white dark:bg-[#1A3125] border border-border-light dark:border-border-dark"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="h-4 w-[1.5px] bg-border-light dark:bg-border-dark"></div>
+<span class="material-symbols-outlined text-2xl text-text-light dark:text-text-dark">
+                        space_dashboard
+                    </span>
+<div class="w-[1.5px] grow bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<div class="h-32 w-full rounded-lg bg-white dark:bg-[#1A3125] border border-border-light dark:border-border-dark"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="h-4 w-[1.5px] bg-border-light dark:bg-border-dark"></div>
+<span class="material-symbols-outlined text-2xl text-text-light dark:text-text-dark">
+                        monitoring
+                    </span>
+<div class="w-[1.5px] grow bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<div class="h-36 w-full rounded-lg bg-white dark:bg-[#1A3125] border border-border-light dark:border-border-dark"></div>
+</div>
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="h-4 w-[1.5px] bg-border-light dark:bg-border-dark"></div>
+<span class="material-symbols-outlined text-2xl text-text-light dark:text-text-dark">
+                        flag_circle
+                    </span>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<div class="h-24 w-full rounded-lg bg-white dark:bg-[#1A3125] border border-border-light dark:border-border-dark"></div>
+</div>
+</div>
+<div class="flex px-4 py-8 justify-start">
+</div>
+</main>
+</div>
+</body></html>
